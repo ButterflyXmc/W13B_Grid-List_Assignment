@@ -12,7 +12,7 @@
       <button @click="toggleButton">Change the display!</button>
     </header>
     <!--6. Variable name "list" should trigger if true or false -->
-    <!-- TENARY SYNTAX "(condition) ? trueMode : falseMode"-->
+    <!-- TERNARY SYNTAX "(condition) ? trueMode : falseMode"-->
     <!-- If list boolean is true, list-mode gets activated, and if it's false, grid-mode gets activated. Altough the website loads in list-mode because I've set the boolean to be true.  -->
     <div class="list" :class="list ? 'list-mode' : 'grid-mode'">
       <!--2. My tweet content will print in this main section -->
