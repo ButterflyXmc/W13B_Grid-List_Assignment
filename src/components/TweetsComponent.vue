@@ -13,9 +13,9 @@
     </header>
     <!--6. Variable name "list" should trigger if true or false -->
     <!-- TERNARY SYNTAX "(condition) ? trueMode : falseMode"-->
-    <!-- If list boolean is true, list-mode gets activated, and if it's false, grid-mode gets activated. Altough the website loads in list-mode because I've set the boolean to be true.  -->
-    <div class="list" :class="list ? 'list-mode' : 'grid-mode'">
-      <!--2. My tweet content will print in this main section -->
+    <!-- If list boolean is true, list-mode gets activated, and if it's false, grid-mode gets activated. -->
+    <main class="list" :class="list ? 'list-mode' : 'grid-mode'">
+      <!--2. The array content will print in this div section -->
       <!-- <div v-for="(tweet, index) in tweets" :key="index"> -->
       <!-- the above code or ↓ does the same thing-->
       <div class="style" v-for="tweet in tweets" :key="tweet">
@@ -30,7 +30,7 @@
           </i>
         </p>
       </div>
-    </div>
+    </main>
   </div>
 </template>
 
